@@ -15,6 +15,7 @@ Justyn Nelson
 </author>
 
 <preference name="phonegap-version" value="2.7.0" />
+<preference name="DisallowOverscroll" value="TRUE"/>
 <!-- Icons -->
 
 <icon src="icon.png" />
