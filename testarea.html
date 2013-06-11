@@ -36,8 +36,23 @@ navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
   <div class="header"><a href="index.html"><img src="img/logo-redesign2.jpg" alt="Insert Logo Here" name="Island Visuals LI Logo" width="100%" height="98" id=""  style="background: #8090AB; display:block;" /></a></div>
   <div class="content">  
 
-    
-  
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        // external url
+        var ref = window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
+        // relative document
+        ref = window.open('map.html', '_self');
+    }
+
+    </script>  
+  <a href="#" onMouseOver="onDeviceReady()"><div>?????????????/////////////////////???????????????????</div></a>
  
  </div> <!-- end content -->
 <div class="footerJustyn">  <a href="#" onclick="window.open('http://www.islandvisuals.com/', '_blank', 'location=yes');">
