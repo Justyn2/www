@@ -2,19 +2,20 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.islandvisuals.app"
-    version   = "0.0.3">
+    version   = "0.0.4">
 
-<name>IVI App 0.0.3</name>
+<name>IVI App beta</name>
 
 <description>
-Basic application to test App.
+Beta test Version Of App.
 </description>
 
 <author href="https://www.islandvisuals.com" email="jwnelson@islandvisuals.com">
 Justyn Nelson
 </author>
 
-<preference name="phonegap-version" value="2.7.0" />
+<preference name="phonegap-version" value="2.5.0" />
+<preference name="webviewbounce" value="false" />
 <!-- Icons -->
 
 <icon src="icon.png" />
