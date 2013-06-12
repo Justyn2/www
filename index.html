@@ -37,10 +37,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
             <style type="text/css">
  #map-canvas {
 	align"right";
-	padding:8%;
+	padding:0;
 	margin:0;
-	min-height: 100px;
-	margin-right: 15%;
+	min-height: 140px;
+	margin-right:0;
 		}
 
     </style>
@@ -55,7 +55,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 <div data-role="page" data-theme="a">
 
-<div data-role="panel" style="" data-position="right" data-display="overlay" data-theme="a"id="mypanel">
+<div data-role="panel" style="" data-position="left" data-display="push" data-theme="a"id="mypanel">
 <h3> Island Visuals</h3>
 <p>
 21 Grant Street 
@@ -63,32 +63,62 @@ document.addEventListener("deviceready", onDeviceReady, false);
     Copiague, NY 11726
     
 </p>
-			   <div id="map-canvas" ></div>
+			<div id="map-canvas" > <noscript></noscript></div>
+             
 
             
 <p> Phone:
 <a  href="tel:1-631-841-5555" data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="true" > 1-632-841-5555 </a> </p>
  
-<a href="#top" style="alignment-adjust:"data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="false" data-icon="arrow-r" data-iconpos="right"> Close </a>
+<a href="#top" style="alignment-adjust:"data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="false" data-icon="arrow-l" data-iconpos="left"> Close </a>
 
 
 </div><!-- end /panel -->
 
 
 
+
+
+
 <div data-role="header" data-position="inline" style="min-width:200px" id="top">
 				<h1>Island Visuals Inc.</h1> 
-				<a href="#mypanel" data-icon="info" class="ui-btn-right"> &#8291;</a>
-       </div>
+                <a href="#mypanel" data-icon="info" title="About Us Button" data-theme="c" data-role="button" data-iconpos="notext"> About Us</a> 
+                <a href="#popupMenu" data-icon="bars" data-iconpos="notext" data-rel="popup" data-inline="true" data-transition="slideup">Menu</a>
 			
+       </div>
+       
+               <div data-role="popup" id="popupMenu" data-theme="a">
+
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+            <li data-role="divider" data-theme="b">Choose an action</li>
+            <li><a href="#">View details</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Disable</a></li>
+            <li><a href="#">Delete</a></li>
+        </ul>
+        
+</div> <!-- end Popup --> 	 
             
-            
-            <div data-role="content" data-theme="a" class="yolo">
+           <!-- <div data-role="content" data-theme="a" class="yolo"> -->
+           
+           
+           
+           
 	
-			</div>
+			<!-- </div>-->
             
-            
+          <div data-role="footer" data-id="foo1" data-theme="d"  data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#"> Pound </a></li>
+		</ul>
+        
+
+	</div><!-- /navbar -->
+</div><!-- /footer -->  
 	      
+          
 </div> <!-- endpage -->
 
 
