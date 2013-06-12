@@ -20,7 +20,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
+<!--
     <script type="text/javascript">
         function initialize() {
             var mapOptions = {
@@ -43,7 +43,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	margin-right:0;
 		}
 
-    </style>
+    </style>-->
 
 
 </head>
@@ -63,7 +63,11 @@ document.addEventListener("deviceready", onDeviceReady, false);
     Copiague, NY 11726
     
 </p>
-			<div id="map-canvas" > <noscript></noscript></div>
+			<!--<div id="map-canvas" > <noscript></noscript></div>
+             -->
+             
+		        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Island Visuals&amp;zoom=17&amp;size=150x150&amp;markers=21 Grant Street, Copiague NY&amp;sensor=false"
+        width="150" height="150">
              
 
             
@@ -81,7 +85,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 
 <div data-role="header" data-position="inline" style="min-width:200px" id="top" data-position="fixed" >
-				<h1>Island Visuals Inc.</h1> 
+				<h1>Home</h1> 
                 <a href="#mypanel" data-icon="info" title="About Us Button" data-theme="c" data-role="button" data-iconpos="notext"> About Us</a> 
                 <a href="#popupMenu" data-icon="bars" data-iconpos="notext" data-rel="popup" data-inline="true" data-transition="slideup">Menu</a>
 			
@@ -101,7 +105,22 @@ document.addEventListener("deviceready", onDeviceReady, false);
             
            <!-- <div data-role="content" data-theme="a" class="yolo"> -->
            
-           
+            <div data-role="content" data-theme="d" class="yolo">
+        <div id="table" class="ui-grid-a">
+            <div class="ui-block-a">one
+            </div>
+            <div class="ui-block-b">two
+            </div>
+            <div class="ui-block-a">thrww
+            </div>
+            <div class="ui-block-b"> for
+            </div>
+            <div class="ui-block-a">feyev
+            </div>
+            <div class="ui-block-b">s1x
+            </div>
+        </div>
+    </div>
            
            
 	
@@ -110,8 +129,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
           <div data-role="footer" data-id="foo1" data-theme="d"  data-position="fixed">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="index.html"  data-transition="slide" >Home</a></li>
-			<li><a  href="Chat.html" data-transition="slide" > Pound </a></li>
+			<li><a href="testarea.html"  data-transition="slide"  data-direction="reverse"> Fun </a></li>
+			<li><a  href="products.html" data-transition="slide" > Product Portal </a></li>
 		</ul>
         
 
