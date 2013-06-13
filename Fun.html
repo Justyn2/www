@@ -22,10 +22,27 @@
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
-    function onDeviceReady() {return;}
+    function onDeviceReady() {
+		
+		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL
+ }); 
+
+function onSuccess(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
+		
+}
          
 </script>
 
+
+<!--
 
 <script type="text/javascript" charset="utf-8">
 	
@@ -45,7 +62,7 @@ var captureError = function(error) {
 
 // start image capture
 navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
-</script>
+</script> -->
 
 </head>
 <body>

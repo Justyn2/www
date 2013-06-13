@@ -18,6 +18,8 @@ Justyn Nelson
 <preference name="webviewbounce" value="false" />
 <!-- Icons -->
 
+<plugin name="Camera" value="CDVCamera" />
+
 <icon src="icon.png" />
 <icon src="icons/ios/icon.png" width="57" height="57" />
 <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
