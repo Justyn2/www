@@ -14,7 +14,7 @@ Beta test Version Of App.
 Justyn Nelson
 </author>
 
-<preference name="phonegap-version" value="2.5.0" />
+<!-- <preference name="phonegap-version" value="2.5.0" /> -->
 <preference name="webviewbounce" value="false" />
 <!-- Icons -->
 

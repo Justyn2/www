@@ -7,14 +7,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fun</title>
+
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/customize.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.min.css">
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.min.css" />
 <link rel="stylesheet" href="css/themes/iviapptheme.min.css" />
-<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
 <script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.mobile-1.3.1.min.js">
-</script>
+<script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
@@ -25,12 +29,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 <script type="text/javascript" charset="utf-8">
 	
-	var captureSuccess = function(mediaFiles) {
+	// capture callback
+var captureSuccess = function(mediaFiles) {
     var i, path, len;
     for (i = 0, len = mediaFiles.length; i < len; i += 1) {
         path = mediaFiles[i].fullPath;
         // do something interesting with the file
-		document.getElementById(screen).src=path;
     }
 };
 
@@ -40,8 +44,7 @@ var captureError = function(error) {
 };
 
 // start image capture
-navigator.device.capture.captureImage(captureSuccess, captureError, {limit:1});
-	
+navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
 </script>
 
 </head>
@@ -111,8 +114,8 @@ navigator.device.capture.captureImage(captureSuccess, captureError, {limit:1});
           <div data-role="footer" data-id="foo1" data-theme="d"  data-position="fixed">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="Fun.html"  data-transition="slide"  data-direction="reverse"> Fun </a></li>
-			<li><a  href="products.html" data-transition="slide" > Product Portal </a></li>
+			<li><a href="inde"  data-transition="slide" > Home </a></li>
+			<li><a  href="products.html" data-transition="slide"  data-direction="reverse"> Product Portal </a></li>
 		</ul>
         
 
