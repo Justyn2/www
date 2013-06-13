@@ -10,6 +10,9 @@
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script src="js//jquery-1.9.1.min.js"></script>
 <script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+
+
 <script type="text/javascript" charset="utf-8">
 
 	var captureSuccess = function(mediaFiles) {
@@ -26,40 +29,21 @@ var captureError = function(error) {
 };
 
 // start image capture
-navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
+   function onDeviceReady() { navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});}
 
 </script>
 
 </head>
 <body>
 
-<div class="container">
-  <div class="header"><a href="index.html"><img src="img/logo-redesign2.jpg" alt="Insert Logo Here" name="Island Visuals LI Logo" width="100%" height="98" id=""  style="background: #8090AB; display:block;" /></a></div>
-  <div class="content">  
-
-    <script type="text/javascript" charset="utf-8">
-
-    // Wait for Cordova to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is ready
-    //
-    function onDeviceReady() {
-        // external url
-        var ref = window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
-        // relative document
-        ref = window.open('map.html', '_self');
-    }
-
-    </script>  
+<div>
+  <div><a href="index.html"><img src="img/logo-redesign2.jpg" alt="Insert Logo Here" name="Island Visuals LI Logo" width="100%" height="98" id=""  style="background: #8090AB; display:block;" /></a></div>
+  <div>  
+  
   <a href="#" onMouseOver="onDeviceReady()"><div>?????????????/////////////////////???????????????????</div></a>
  
  </div> <!-- end content -->
-<div class="footerJustyn">  <a href="#" onclick="window.open('http://www.islandvisuals.com/', '_blank', 'location=yes');">
-    <p align="center" style="font-size:24px;"> Visit Our Website</p></a>
-    
-  <!-- end .footer --></div>
+
     
 
   <!-- end .container --></div>
