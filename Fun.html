@@ -2,22 +2,19 @@
 <html>
 <head>
 
-
-
-
-
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.min.css">
 <title>Fun</title>
-
+<link rel="stylesheet" type="text/css" href="css/themes/iviapptheme.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.3.1.min.css">
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-
-<script>navigator.notification.alert("My name is "); </script>
 
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
     function onDeviceReady() {
 		
-		navigator.notification.alert("My name is "); 
+		setTimeout(function(){navigator.notification.alert("Opening Camera... ")},3002);
+	
 		
 		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.DATA_URL
@@ -36,9 +33,13 @@ function onFail(message) {
          
 </script>
 
+
+<script type="text/javascript" charset="utf-8" src="js/jquery191min.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
+
 </head>
 <body>
-<a href="products.html"> products </a><img id="myImage" height="400"  width="300" />
+<a href="products.html"> Products </a><img id="myImage" height="400"  width="300" />
 
 <a href="index.html"> Home </a>
 
