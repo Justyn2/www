@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.islandvisuals.app"
+    id        = "com.islandvisuals.beta"
     version   = "0.0.5">
 
-<name>IVI App beta</name>
+<name>IVI App beta 0.0.5</name>
 
 <description>
-Beta test Version Of App.
+Beta test Version Of App patch 5.
 </description>
 
 <author href="https://www.islandvisuals.com" email="jwnelson@islandvisuals.com">
 Justyn Nelson
 </author>
 
-<!-- <preference name="phonegap-version" value="2.5.0" /> -->
-<!-- <preference name="webviewbounce" value="false" /> -->
+<preference name="phonegap-version" value="2.8.1" />
+<preference name="webviewbounce" value="false" />
 <!-- Icons -->
-
+<feature name="http://api.phonegap.com/1.0/camera"/>
 <plugin name="Camera" value="CDVCamera" />
 
 <icon src="icon.png" />

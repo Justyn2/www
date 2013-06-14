@@ -15,7 +15,7 @@
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
-    function onDeviceReady() {return;}
+    function onDeviceReady() { navigator..notification.alert("Cordova Is Ready")}
          
 </script>
 
@@ -28,67 +28,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 
 
-<div data-role="page" data-theme="a">
+<div data-role="page">
 
-<div data-role="panel" style="" data-position="left" data-display="push" data-theme="a"id="mypanel">
-<h3> Island Visuals</h3>
-<p>
-21 Grant Street 
-<br/>
-    Copiague, NY 11726
-    
-</p>
-		        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Island Visuals&amp;zoom=15&amp;size=150x150&amp;markers=21 Grant Street, Copiague NY&amp;sensor=false"
-        width="150" height="150">
-             
+<a href="Fun.html"> Fun</a><img height="400" width="300" />
 
-            
-<p> Phone:
-<a  href="tel:1-631-841-5555" data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="true" > 1-632-841-5555 </a> </p>
- 
-<a href="#top" style="alignment-adjust:"data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="false" data-icon="arrow-l" data-iconpos="left"> Close </a>
+<a href="index.html"> Home </a>  
 
-
-</div><!-- end /panel -->
-
-
-
-
-
-
-<div data-role="header"  data-position="fixed" data-position="inline" style="min-width:200px" id="top">
-				<h1>View Our Products</h1> 
-                <a href="#mypanel" data-icon="info" title="About Us Button" data-theme="c" data-role="button" data-iconpos="notext"> About Us</a> 
-                <a href="#popupMenu" data-icon="bars" data-iconpos="notext" data-rel="popup" data-inline="true" data-transition="slideup">Menu</a>
-			
-       </div>
-<div data-role="popup" id="popupMenu" data-theme="a">
-
-        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
-            <li data-role="divider" data-theme="b">Choose an action</li>
-            <li><a href="#">View details</a></li>
-            <li><a href="#">Edit</a></li>
-            <li><a href="#">Disable</a></li>
-            <li><a href="#">Delete</a></li>
-        </ul>
-        
-</div> <!-- end Popup --> 	 
-            
-         <div data-role="content" data-theme="a" class="yolo"><img src="img/Screen Shot 2013-06-12 at 4.47.02 PM.png" width="400" height="440"><img src="img/onqulogo.gif" width="400" height="108" alt="On-Qu.com" align="middle" /><img src="img/Screen Shot 2013-06-12 at 4.49.08 PM.png" width="400" height="482" align="middle"/></div>
-            
-          <div data-role="footer" data-id="foo1" data-theme="d"  data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="index.html" data-transition="slide"  data-direction="reverse">Home</a></li>
-			<li><a href="Fun.html" data-transition="slide"> Fun </a></li>
-		</ul>
-        
-
-	</div><!-- /navbar -->
-</div><!-- /footer -->  
-	      
-          
-</div> <!-- endpage -->
+</div>
 
 
 </body>
