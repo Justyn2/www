@@ -14,7 +14,7 @@ Beta test Version Of App patch 5.
 Justyn Nelson
 </author>
 
-<preference name="phonegap-version" value="2.8.1" />
+<preference name="phonegap-version" value="2.7.0" />
 <preference name="webviewbounce" value="false" />
 <!-- Icons -->
 <feature name="http://api.phonegap.com/1.0/camera"/>
