@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Island Visuals App Home</title>
-<link rel="stylesheet" type="text/css" href="css/customize.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.min.css">
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.min.css" />
 <link rel="stylesheet" href="css/themes/iviapptheme.min.css" />
@@ -12,10 +11,16 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/jquery.mobile-1.3.1.min.js">
 </script>
+<script type="text/javascript">
+    app.initialize();
+    function displayHello(){
+        navigator.notification.alert("My name is ");  
+    }
+</script>
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
-    function onDeviceReady() {return;}
+    function onDeviceReady() {app.initialize();}
          
 </script>
 
@@ -44,6 +49,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 		}
 
     </style>-->
+    
+    
+    <script type="text/javascript">
+    $(document).on('pageinit', function($){
+        app.initialize();
+    });
+</script>
 
 
 </head>
@@ -65,12 +77,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 </p>
 			<!--<div id="map-canvas" > <noscript></noscript></div>
              -->
-             
-		        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Island Visuals&amp;zoom=17&amp;size=150x150&amp;markers=21 Grant Street, Copiague NY&amp;sensor=false"
-        width="150" height="150">
-             
+             <img src="img/staticmap.png" width="150" height="150" alt="Map">
 
-            
 <p> Phone:
 <a  href="tel:1-631-841-5555" data-rel="close" data-role="button" data-corners="false" data-theme="a" data-inline="true" > 1-632-841-5555 </a> </p>
  
@@ -129,7 +137,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
           <div data-role="footer" data-id="foo1" data-theme="d">  <!-- data-position="fixed" -->
 	<div data-role="navbar">
 		<ul>
-			<li><a href="Fun.html"  data-transition="slide"  data-direction="reverse"> Fun </a></li>
+			<li><a href="Fun.html"> Fun </a></li>
 			<li><a  href="products.html" data-transition="slide" > Product Portal </a></li>
 		</ul>
         
