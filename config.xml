@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.islandvisuals.app"
-    version   = "0.0.4">
+    version   = "0.0.5">
 
 <name>IVI App beta</name>
 
@@ -15,7 +15,7 @@ Justyn Nelson
 </author>
 
 <!-- <preference name="phonegap-version" value="2.5.0" /> -->
-<preference name="webviewbounce" value="false" />
+<!-- <preference name="webviewbounce" value="false" /> -->
 <!-- Icons -->
 
 <plugin name="Camera" value="CDVCamera" />
