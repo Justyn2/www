@@ -12,6 +12,7 @@ padding:0;
 		}
 	
 	.css3button {
+		vertical-align:bottom;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #123d54;
@@ -66,6 +67,7 @@ body
    padding-bottom:60px;   /* Height of the footer */
 }
 #footer {
+	padding:10px 10px;
    position:fixed;
    z-index:2;
    bottom:0;
