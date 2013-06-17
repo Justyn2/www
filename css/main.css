@@ -50,11 +50,15 @@ body
    height:100%;
 
 }
+b.opaque{
+	opacity:1.0;
+	}
 #view {
    min-height:100%;
       z-index:-1;
 }
 #header {
+	opacity:0.6;
 	width:100%;
 	   position:fixed;
    background:#ff0;
