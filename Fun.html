@@ -10,9 +10,10 @@
 <script>
 document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
-    function onDeviceReady() {
+    function onDeviceReady() { return;}
+	function take() {
 		
-		setTimeout(function(){navigator.notification.alert("Opening Camera... ")},3002);
+		setTimeout(function(){navigator.notification.alert("Opening Camera... ")},32);
 	
 		
 		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
@@ -52,14 +53,14 @@ function onFail(message) {
    <div class="css3button" style="margin-top:30px; min-height:1800px;"> <Button disabled class="css3button" > Help </Button> <br/>
    <div align="center">
    
-<img height="400" width="320" id="myImage"></img><p align="center"> &nbsp; <a class="arrowup"> </a>  &nbsp; &nbsp;&nbsp;&nbsp; Pic Here  &nbsp; <a class="arrowup"> </a> </p> </div>
+<img id="myImage"></img><p align="center" onClick="this.take()"> &nbsp; <a class="arrowup"> </a>  &nbsp; &nbsp;&nbsp;&nbsp; Pic Here  &nbsp; <a class="arrowup"> </a> </p> </div>
 
 
    </div>
    
    </div>
    
-<div id="footer" class="glass"> 
+<div id="footer"> 
    
 <a class="css3button" href="index.html" style="text-decoration:none; float:left; left:auto"> &larr; Home </a> 
 
