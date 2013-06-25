@@ -6,6 +6,22 @@
 <link charset="utf-8" type="text/css" rel="stylesheet" href="css/main.css">
 
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script>
+function popup(id)
+
+{
+
+document.getElementById(id).style.display='block';
+
+setTimeout(
+function() {
+	document.getElementById(id).style.display='none'
+	}
+	,
+	2000); 
+
+}
+</script>
 
 </head>
 
@@ -18,20 +34,28 @@
    <div id="header" class="glass">
    Island Visuals 
    
+  </div>   
+<div class="glass floater" id="floater1" style="display:none">
+   Island Visuals 
+   
   </div>
    
    <div id="body">
    
-   <div class="css3button" style="margin-top:30px; min-height:1800px;"> <Button  class="css3button" id="help" onClick="document.getElementById('help').style.height='200px'; window.location='index.html';"> Help </Button> <br/>
+   <div class="css3button" style="margin-top:30px;"> <!--<Button  class="css3button" id="help" onClick="document.getElementById('help').style.height='200px'; window.location='index.html';"> Help </Button> <br/>-->
+   
+   <img src="img/stop.gif" alt="rotating stop sign coroplast" width="274" height="465" onClick="popup('floater1')"></div>
 
-</div>
-</div>
    
 <div id="footer"> 
+<a href="index.html"  style=" margin: 0px 0px; float:none"><img src="img/logo5.png" style="max-height:170px; max-width:150px; left:auto; float:left;" width="20%"></a> 
+  
+<a href="contact.html" style=" margin: 0px 0px; float:none"><img src="img/logo2a.png" style="max-height:170px; max-width:150px; right:auto; float:right; margin-right:3%" width="20%"></a> 
 
-<a class="css3button" style="text-decoration:none;float:left" href="Fun.html" > &larr; Fun </a> 
-<a class="css3button"  href="index.html" style="text-decoration:none; float:right"> Home &rarr;</a>
-</div></body>
+</div>
+</div>
+
+</body>
 </body>
 
 
