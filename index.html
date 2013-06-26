@@ -15,6 +15,15 @@
 document.getElementById('spacer').width=(screen.width-50);
 </script>
         <script>
+			function tel()
+			{
+				document.addEventListener('deviceready', telCall, false);
+			}
+			
+			function telcall()
+			{
+				window.open('tel:1-631-841-5555','Call Us','_blank','location=no')
+			}
 
             function loadYoutube()
             {
@@ -60,31 +69,27 @@ document.getElementById('spacer').width=(screen.width-50);
    
    <div id="body">
    
-   <div class="css3button" style="margin-top:30px; min-height:300px" align="center"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
+   <div class="css3button" style="margin-top:30px;" align="center"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
     <h3>&nbsp;</h3>
     <table>
   
-    <tr>
-    <td><a href="tel:1-631-841-5555"><img src="img/logo.png" height="100%" width="100%"></a></td>
-    <td><a href="contact.html"><img src="img/logo2.png" height="100%" width="100%"></a></td>
+    <tr >
+    <td align="center"><a href="#" onClick="tel()"><img src="img/logo.png"></a></td>
+    <td  align="center"><a href="contact.html"><img src="img/logo2.png"></a></td>
     
     </tr>
  
     <tr>
-    <td> <a href="#" onClick="loadYoutube"><img src="img/logo3.png" height="100%" width="100%"></td>
-    <td><a href="products.html"><img src="img/logo4.png" height="100%" width="100%"></a></td>
+    <td  align="center"> <a href="#" onClick="loadYoutube()"><img src="img/logo3.png" ></td>
+    <td align="center"><a href="products.html"><img src="img/logo4.png" ></a></td>
     </tr>
     </table>
    
-    <table align="center">
-    <tr>
-    <td> <img height="100%" width="100%"></td>
-    <td>
-    <img src="img/ivilogo.gif" alt="Logo" width="300" height="50">
-    </td>
-     <td> <img height="100%" width="100%"></td>
-    </tr>
-    </table>
+
+  
+    <div align="center">
+    <img src="img/ivilogo.gif" alt="Logo" width="170" height="30">
+   </div>
     
     
 </div>
