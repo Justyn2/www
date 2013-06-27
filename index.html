@@ -11,6 +11,25 @@
 	
 	
 </head>
+
+<script>
+function resizeImg(){
+var w=window.innerHeight / 158;
+w=Math.floor(w);
+w=Math.floor(158*w/4);
+v=w*.77;
+w=w+'px';
+
+document.getElementById('infoButton').style.height=w;
+document.getElementById('infoButton').style.width=w;
+document.getElementById('vidButton').style.height=v;
+document.getElementById('vidButton').style.width=w;
+
+}
+
+
+
+</script>
 <script>
 document.getElementById('spacer').width=(screen.width-50);
 </script>
@@ -57,7 +76,7 @@ document.getElementById('spacer').width=(screen.width-50);
 
 </script>
 </head>
-<body>
+<body onLoad="resizeImg()" onResize="resizeImg()">
 
 <div id="container">
 
@@ -73,8 +92,8 @@ document.getElementById('spacer').width=(screen.width-50);
     <h3>&nbsp;</h3>
 
 <!-- <div><a href="tel:1-631-841-5555" style="text-decoration:none">&lrm; <img src="img/logo.png"></img>&lrm;</a></div>    -->
-<div> <a href="contact.html"><img src="img/logo2.png"></a></div>
-<div> <a href="#" onClick="loadYoutube()"><img src="img/logo3.png" ></a></div>
+<div> <a href="contact.html"><img src="img/logo2.png" name="infoButton" width="158" height="159" id="infoButton"></a></div>
+<div> <a href="#" onClick="loadYoutube()"><img src="img/logo3.png" name="vidButton" id="vidButton" ></a></div>
 <!--<div> <a href="products.html"><img src="img/logo4.png" ></a></div>-->
   
  
