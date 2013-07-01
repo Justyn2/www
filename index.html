@@ -16,7 +16,7 @@
 function resizeImg(){
 var w=window.innerHeight / 158;
 w=Math.floor(w);
-w=Math.floor(158*w/4);
+w=Math.floor(158*w/3);
 v=Math.ceil(w*.77);
 
 if (w<159)
@@ -121,7 +121,7 @@ document.getElementById('spacer').width=(screen.width-50);
 
 <div id="view">
 
- <div class="glass" id="header">
+ <div id="header">
    Island Visuals
   </div>
    
@@ -136,9 +136,8 @@ document.getElementById('spacer').width=(screen.width-50);
 <!--<div> <a href="products.html"><img src="img/logo4.png" ></a></div>-->
   
  
-    <div align="center">
-    <img src="img/ivilogo.gif" alt="Logo" width="170" height="30">
-   </div>
+    <div align="center" style="margin-top:30px"> <a href="#" onClick="loadIslandVisuals()"><img src="img/ivilogo.gif" alt="Logo" width="170" height="30"></a>
+    </div>
     
     
 </div>

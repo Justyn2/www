@@ -7,21 +7,52 @@
 <link charset="utf-8" type="text/css" rel="stylesheet" href="css/main.css">
 
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script>
+function resizeImg(){
+var w=window.innerHeight / 158;
+w=Math.floor(w);
+w=Math.floor(158*w/6);
+v=Math.ceil(w*.77);
 
+if (w<159)
+{
+	w=w+'px';
+	v=v+'px';
+
+document.getElementById('home').style.height=w;
+document.getElementById('home').style.width=w;
+document.getElementById('vidButton').style.height=v;
+document.getElementById('vidButton').style.width=w;
+
+}
+else
+{
+	
+	document.getElementById('home').style.height='158px';
+document.getElementById('home').style.width='158px';
+document.getElementById('vidButton').style.height='122px';
+document.getElementById('vidButton').style.width='158px';
+}
+
+}
+
+
+
+</script>
 	
 	
 </head>
 
  
 </head>
-<body>
+<body onLoad="resizeImg()" onResize="resizeImg()" >
 
 <div id="container">
   <div id="map-canvas"></div>
 
 <div id="view">
 
- <div class="glass" id="header">
+ <div id="header">
    Island Visuals
   </div>
 
@@ -30,7 +61,7 @@
    
  
    
-   <div class="css3button" style="margin-top:30px; min-height:300px"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
+   <div class="css3button" style="margin-top:30px;"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
    
    
     <h1> Island Visuals, Inc.</h1>
@@ -51,7 +82,7 @@
    
    </div>
   <div id="footer" align="center"> 
-<a href="index.html"  style=" margin: 0px 0px; float:none"><img src="img/logo5.png" style="max-height:170px; max-width:150px; float:none"  width="158"></a> 
+<a href="index.html"  style=" margin: 0px 0px; float:none"><img src="img/logo5.png" name="home" id="home" style="max-height:170px; max-width:150px; float:none" ></a> 
   
 <!--<a href="products.html" style=" margin: 0px 0px; float:none"><img src="img/logo4a.png" style="max-height:150px; max-width:130px; right:auto; float:right; margin-right:3%" width="20%"></a> -->
 
