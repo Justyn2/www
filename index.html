@@ -1,169 +1,86 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-<title>Island Visuals App Home</title>
-
-<link charset="utf-8" type="text/css" rel="stylesheet" href="css/main.css">
-
-<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-
-	
-	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
-<script>
-var w=158;
-function resizeImg(){
-	if(window.innerHeight >= window.innerWidth)
-	{
-w=window.innerWidth/ 158;
-	}
-	else
-	{
-w=window.innerHeight/ 158;
-	}
-w=Math.floor(w);
-w=Math.floor(158*w/3);
-v=Math.ceil(w*.77);
-if (w<159)
+<body>
+<style>
+.link,
+.link a,
+.signupframe
 {
-	w=w+'px';
-	
+	color: #226699;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+	.link,
+	.link a {
+		text-decoration: none;
+		}
+	.signupframe {
+		border: 1px solid #000000;
+		background: #ffffff;
+		}
+.signupframe .required {
+	font-size: 10px;
+	}
+</style>
+<form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup2894" accept-charset="UTF-8" onsubmit="return verifyRequired2894();" >
+<input type="hidden" name="redirect" value="home.html">
+<input type="hidden" name="errorredirect" value="#">
 
-document.getElementById('infoButton').style.height=w;
-document.getElementById('infoButton').style.width=w;
-document.getElementById('vidButton').style.height=w;
-document.getElementById('vidButton').style.width=w;
+<div id="SignUp" class="css3button">
+<table width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
+	<tr>
+      <td valign="top" align="right">
+        <span class="required">*</span> E-Mail
+      </td>
+      <td align="left">
+        <input type="text" name="fields_email">
+      </td>
+    </tr>
+    <input type="hidden" name="listid" value="22931">
+    <input type="hidden" name="specialid:22931" value="SYT0">
 
-}
-else
-{
-	
-	document.getElementById('infoButton').style.height='158px';
-document.getElementById('infoButton').style.width='158px';
-document.getElementById('vidButton').style.height='158px';
-document.getElementById('vidButton').style.width='158px';
-}
-
-}
-
-
-
-</script>
-<script>
-document.getElementById('spacer').width=(screen.width-50);
-</script>
-        <script>
-			/*function tel()
-			{
-				document.addEventListener('deviceready', telCall, false);
-			}
-			
-			function telcall()
-			{
-				window.open('tel:1-631-841-5555','Call Us','_blank','location=no')
-			}*/
-			   function loadIslandVisuals()
-            {
-                document.addEventListener('deviceready', IslandVisuals, false);
-            }
-
-            function IslandVisuals()
-            {
-                // do nothing
-                console.log('Device is now ready');
-				
-				navigator.notification.confirm('Warning, Continuing requires an Internet Connection. Your device\'s current connection will be used, your ISP may charge you the standard rate if you continue', alertCallbackIslandVisuals, 'IslandVisuals', 'Cancel, Continue');
-				
-
-            }
-			
-			function alertCallbackIslandVisuals(buttonIndex)
-			{
-				if (buttonIndex==2)
-				{
-					window.open('http://m.IslandVisuals.com/', '_blank', 'location=yes')
-				}
-				 else
-				 {
-				 }
-			}
-
-            function loadYoutube()
-            {
-                document.addEventListener('deviceready', youtube, false);
-            }
-
-            function youtube()
-            {
-                // do nothing
-                console.log('Device is now ready');
-				
-				navigator.notification.confirm('Warning, Continuing requires an Internet Connection. Your device\'s current connection will be used, your ISP may charge you the standard rate if you continue', alertCallbackYoutube, 'YouTube(R)', 'Cancel, Continue');
-				
-
-            }
-			
-			function alertCallbackYoutube(buttonIndex)
-			{
-				if (buttonIndex==2)
-				{
-					window.open('http://m.youtube.com/#/user/IslandVisuals/5_1', '_blank', 'location=yes')
-				}
-				 else
-				 {
-				 }
-			}
-  
-
-</script>
-  
-
-</script>
-</head>
-<body onLoad="resizeImg()" onResize="resizeImg()">
-
-<div id="container">
-
-<div id="view">
-
- <div id="header">
-   Island Visuals
-  </div>
-   
-   <div id="body">
-   
-   <div class="css3button" style="margin-top:30px; z-index:2;" align="center"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
-
-<!-- <div><a href="tel:1-631-841-5555" style="text-decoration:none">&lrm; <img src="img/logo.png"></img>&lrm;</a></div>    -->
-<div> <a href="contact.html"><img src="img/logo2.png" name="infoButton" width="158" height="159" id="infoButton" style=" max-height:158; max-width:158"></a> 
- </div><div> <a href="#" onClick="loadYoutube()"><img src="img/logo3.png" name="vidButton" id="vidButton" ></a></div>
-<!--<div> <a href="products.html"><img src="img/logo4.png" ></a></div>-->
-  
- 
-    <div align="center" style="margin-top:30px"> <a href="#" onClick="loadIslandVisuals()"><img src="img/ivilogo.gif" alt="Logo" width="170" height="30"></a>
-    </div>
-    
-    
+    <input type="hidden" name="clientid" value="819316">
+    <input type="hidden" name="formid" value="2894">
+    <input type="hidden" name="reallistid" value="1">
+    <input type="hidden" name="doubleopt" value="0">
+    <tr>
+      <td> </td>
+      <td><span class="required">*</span> = Required Field</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><input type="submit" name="Submit" value="Submit"></td>
+    </tr>
+    </table>
 </div>
-   
-   </div>
-   
-<!--<div id="footer" align="center"> 
-   
+</form>
+<p>
+  <script type="text/javascript">
+
+var icpForm2894 = document.getElementById('icpsignup2894');
+
+if (document.location.protocol === "https:")
+
+	icpForm2894.action = "https://app.icontact.com/icp/signup.php";
+function verifyRequired2894() {
+  if (icpForm2894["fields_email"].value == "") {
+    icpForm2894["fields_email"].focus();
+    alert("The E-Mail field is required.");
+    return false;
+  }
 
 
-<a href="products.html" class="css3button" style="text-decoration:none; alignment-adjust:central; float:left; left:auto"> &larr; Products </a> 
-
-
-<a href="Fun.html" class="css3button" style="text-decoration:none; float:right; right:auto"> Fun &rarr;</a> 
-
-
-</div>-->
-</div>
-
-</div></body>
-
-
+return true;
+}
+  </script> 
+  Please enter your email address to continue.</p>
+<p><span class="link"><a href="http://www.icontact.com">Email Marketing</a> You Can Trust</span></p>
+<p>&nbsp;</p>
+</body>
 </html>

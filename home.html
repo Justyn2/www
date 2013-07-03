@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Island Visuals App Home</title>
+
+<link charset="utf-8" type="text/css" rel="stylesheet" href="css/main.css">
+
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+	
+	
+</head>
+
+<script>
+var w=158;
+function resizeImg(){
+	if(window.innerHeight >= window.innerWidth)
+	{
+w=window.innerWidth/ 158;
+	}
+	else
+	{
+w=window.innerHeight/ 158;
+	}
+w=Math.floor(w);
+w=Math.floor(158*w/3);
+v=Math.ceil(w*.77);
+if (w<159)
+{
+	w=w+'px';
+	
+
+document.getElementById('infoButton').style.height=w;
+document.getElementById('infoButton').style.width=w;
+document.getElementById('vidButton').style.height=w;
+document.getElementById('vidButton').style.width=w;
+
+}
+else
+{
+	
+	document.getElementById('infoButton').style.height='158px';
+document.getElementById('infoButton').style.width='158px';
+document.getElementById('vidButton').style.height='158px';
+document.getElementById('vidButton').style.width='158px';
+}
+
+}
+
+
+
+</script>
+<script>
+document.getElementById('spacer').width=(screen.width-50);
+</script>
+        <script>
+			/*function tel()
+			{
+				document.addEventListener('deviceready', telCall, false);
+			}
+			
+			function telcall()
+			{
+				window.open('tel:1-631-841-5555','Call Us','_blank','location=no')
+			}*/
+			   function loadIslandVisuals()
+            {
+                document.addEventListener('deviceready', IslandVisuals, false);
+            }
+
+            function IslandVisuals()
+            {
+                // do nothing
+                console.log('Device is now ready');
+				
+				navigator.notification.confirm('Warning, Continuing requires an Internet Connection. Your device\'s current connection will be used, your ISP may charge you the standard rate if you continue', alertCallbackIslandVisuals, 'IslandVisuals', 'Cancel, Continue');
+				
+
+            }
+			
+			function alertCallbackIslandVisuals(buttonIndex)
+			{
+				if (buttonIndex==2)
+				{
+					window.open('http://m.IslandVisuals.com/', '_blank', 'location=yes')
+				}
+				 else
+				 {
+				 }
+			}
+
+            function loadYoutube()
+            {
+                document.addEventListener('deviceready', youtube, false);
+            }
+
+            function youtube()
+            {
+                // do nothing
+                console.log('Device is now ready');
+				
+				navigator.notification.confirm('Warning, Continuing requires an Internet Connection. Your device\'s current connection will be used, your ISP may charge you the standard rate if you continue', alertCallbackYoutube, 'YouTube(R)', 'Cancel, Continue');
+				
+
+            }
+			
+			function alertCallbackYoutube(buttonIndex)
+			{
+				if (buttonIndex==2)
+				{
+					window.open('http://m.youtube.com/#/user/IslandVisuals/5_1', '_blank', 'location=yes')
+				}
+				 else
+				 {
+				 }
+			}
+  
+
+</script>
+  
+
+</script>
+</head>
+<body onLoad="resizeImg()" onResize="resizeImg()">
+
+<div id="container">
+
+<div id="view">
+
+ <div id="header">
+   Island Visuals
+  </div>
+   
+   <div id="body">
+   
+   <div class="css3button" style="margin-top:30px; z-index:2;" align="center"> <!--<Button class="css3button" onClick="window.location='Fun.html';"> CLICK HERE </Button>-->      
+
+<!-- <div><a href="tel:1-631-841-5555" style="text-decoration:none">&lrm; <img src="img/logo.png"></img>&lrm;</a></div>    -->
+<div> <a href="contact.html"><img src="img/logo2.png" name="infoButton" width="158" height="159" id="infoButton" style=" max-height:158; max-width:158"></a> 
+ </div><div> <a href="#" onClick="loadYoutube()"><img src="img/logo3.png" name="vidButton" id="vidButton" ></a></div>
+<!--<div> <a href="products.html"><img src="img/logo4.png" ></a></div>-->
+  
+ 
+    <div align="center" style="margin-top:30px"> <a href="#" onClick="loadIslandVisuals()"><img src="img/ivilogo.gif" alt="Logo" width="170" height="30"></a>
+    </div>
+    
+    
+</div>
+   
+   </div>
+   
+<!--<div id="footer" align="center"> 
+   
+
+
+<a href="products.html" class="css3button" style="text-decoration:none; alignment-adjust:central; float:left; left:auto"> &larr; Products </a> 
+
+
+<a href="Fun.html" class="css3button" style="text-decoration:none; float:right; right:auto"> Fun &rarr;</a> 
+
+
+</div>-->
+</div>
+
+</div></body>
+
+
+</html>
