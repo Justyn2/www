@@ -17,7 +17,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
     // Cordova is ready
     //
     function onDeviceReady() {
-		var ref = window.open('../signup.html', '_blank', 'location=no');
+		var ref = window.open('../www/signup.html', '_blank', 'location=no');
 		 ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
          ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
          ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
